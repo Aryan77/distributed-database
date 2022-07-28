@@ -1,7 +1,7 @@
 # Distributed, persistent, sharded, fault-tolerant NOSQL Database
 
 This project aims to build an advanced NOSQL database from scratch in Go, inspired by the likes of Google's BigTable and Amazon's DynamoDB - which need to be:
-1. Distributed across multiple servers - both because they store so much data and so that if one fails the others can handle the load (thus persistent and fault-tolerant), and
+1. Distributed across multiple servers - both because they store so much data and so that if one fails the others can handle the load (thus persistent and fault-tolerant).
 2. Extremely performant - these databases are storing a massive amount of data and are processing upwards of millions of requests every second - it is important that they are very fast.
 3. Reliable and correct - Allowing so many concurrent connections is bound to cause a lot of difficulties in making sure the data in the database at any given point is correct; the difficulty of this is compounded by the fact that the data is distributed across multiple servers, all of which have the potential to fail and mis-communicate.
 
